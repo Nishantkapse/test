@@ -1,0 +1,4 @@
+This is the file , which wanted to be on git repo
+:
+:y
+
