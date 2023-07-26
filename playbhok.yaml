@@ -1,0 +1,14 @@
+- name: dockerinstallation
+  hosts: webserver
+  become: yes
+  tasks:
+  - name: dockertest
+    apt:
+     update_cache: yes
+     name: docker.io
+     state: present
+  - name: servicestart
+    service:
+     name: docker
+     state: started
+     enabled: yes
